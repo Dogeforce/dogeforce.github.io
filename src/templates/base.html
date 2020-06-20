@@ -10,12 +10,14 @@
 
             <!-- sidebar -->
             <div class="slds-border_right slds-col slds-size_1-of-6">
-                {{ page.repositories }}
+                {% block sidebar %} {% endblock %}
             </div>
 
             <!-- content -->
-            <div class="slds-grid slds-p-left_small slds-col slds-size_1-of-6">
-                <p>Content goes here...</p>
+            <div class="slds-grid slds-p-left_small slds-col slds-size_5-of-6">
+
+                {% block content %} {% endblock %}
+
             </div>
         </div>
 

@@ -10,7 +10,7 @@ def slugify_url(item):
 
 env = Environment(loader=FileSystemLoader(searchpath='src/templates'))
 
-test_template = env.get_template('base.html')
+home_template = env.get_template('home.html')
 
 content = yaml.load(open('content/projects.yaml').read(), Loader=yaml.SafeLoader)
 # posts = yaml.load(open('content/posts.yaml').read(), Loader=yaml.SafeLoader)
@@ -28,22 +28,31 @@ repositories = env.get_template('repositorylist.html').render(items=content['pro
 #             detail=post
 #         ))
 
+with open('content/source/posts/2020-06-20-a-demo.md', 'r') as post:
+    with open('content/posts/2020-06-20-a-demo.html', 'w') as rendered_post:
+        render = post_page_template.render(
+            content={
+                'text': markdown(post.read())
+            }
+        )
+        rendered_post.write(render)
+        rendered_post.close()
+    post.close()
+
 today = datetime.today().date().isoformat()
 
 for project in content['projects']:
     with open('pages/projects/{}.html'.format(project['slug']), 'w') as page:
-        project['repositories'] = repositories
+        project['sidebar'] = repositories
         project_page_render = project_page_template.render(
             detail=project,
             build_date=today
         )
-        # print(project['description'].replace('\n', '</br>') if 'description' in project else '')
         page.write(project_page_render)
         page.close()
 
-r = test_template.render(page={
-    'content': 'Hello world',
-    'repositories': repositories,
+r = home_template.render(page={
+    'sidebar': repositories,
     'build_date': today
 })
 
