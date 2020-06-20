@@ -10,6 +10,7 @@ markdown2 = "*"
 jinja2 = "*"
 pyyaml = "*"
 python-slugify = "*"
+markdown = "*"
 
 [requires]
 python_version = "3.8"

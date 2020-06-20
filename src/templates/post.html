@@ -1,3 +1,12 @@
-<div class="">
+{% extends 'base.html' %}
+{% block sidebar %}
+    {{ sidebar }}
+{% endblock %}
+
+{% block content %}
+
+<div>
     {{ content.text }}
 </div>
+
+{% endblock %}

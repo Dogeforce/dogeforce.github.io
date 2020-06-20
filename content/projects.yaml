@@ -7,16 +7,16 @@
 projects:
   -
     title: Declarative Rollup Summaries for Lookups
+    description: dlrs.md
     location: github
     url: https://github.com/afawcett/declarative-lookup-rollup-summaries/
-    description: |-
-      This is a long text that should be properly escaped,
-      even though it has many lines!
   -
     title: Mass Action Scheduler
+    description: mas.md
     location: github
     url: https://github.com/douglascayers-org/sfdx-mass-action-scheduler
   -
     title: Dogeforce's Website (this site!)
+    description: dogeforce.md
     location: github
     url: https://github.com/Dogeforce/dogeforce.github.io/

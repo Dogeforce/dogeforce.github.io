@@ -61,10 +61,21 @@
             <div class="slds-grid slds-p-left_small slds-col slds-size_5-of-6">
 
                 
+<div class="slds-m-around_small">
+    <p class="slds-text-heading_large slds-m-bottom_small">Declarative Rollup Summaries for Lookups</p>
 
-<!-- todo: add posts -->
-<p>Recent posts go here!</p>
+    <p class="slds-text-heading_medium">Website: <a href="https://github.com/afawcett/declarative-lookup-rollup-summaries/">https://github.com/afawcett/declarative-lookup-rollup-summaries/</a></p>
 
+    <div>
+        <h2 class="slds-text-heading_medium slds-m-bottom_medium slds-m-top_medium">About the tool</h2>
+<p class="slds-m-bottom_medium">The DLRS is a tool that offers a feature set that extends a feature called "rollup summaries" on the Salesforce platform. It deploys Apex code to your organization and enables administrators to deploy automatically generated code to the org (even a production environment, yes).</p>
+<p class="slds-m-bottom_medium">The tool code operates using custom metadata records managed by a Visualforce page on the project. From there an administrator or a developer can create custom metadata records for the tool to use when running its triggers (the code deployed which was mentioned before).</p>
+<p class="slds-m-bottom_medium">When a record with a DLRS trigger is saved, it activates the DLRS tool which then gets the custom setting for the specific object. Then it queries the object and its related record(s) to update its rollup summary.</p>
+<h3 class="slds-text-heading_small slds-m-bottom_medium slds-m-top_medium">Example</h3>
+<p class="slds-m-bottom_medium">A rollup is created on Custom Object A (<code>CustomObjectA__c</code>) to count how many Custom Object B's (<code>CustomObjectB__c</code>) records are related to it through a common lookup field (not a master-detail relationship, that is).</p>
+<p class="slds-m-bottom_medium">When a new object B is created, updated or deleted, the tool analyzes the criteria defined on its custom setting (the custom metadata type) and evaluates whether or not to update the counter on the parent (object A) field.</p>
+    </div>
+</div>
 
 
             </div>
@@ -84,7 +95,7 @@
                 <center>
                     <p>
                         <span class="slds-text-color_default">Copyright® Dogeforce Project Collaborators</span>
-                        <span class="slds-text-color_weak">@ </span>
+                        <span class="slds-text-color_weak">@ 2020-06-20</span>
                     </p>
                 </center>
             </div>
