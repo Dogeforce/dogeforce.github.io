@@ -1,0 +1,22 @@
+# Each project should have the following format:
+#
+# title: Project's Title
+#    location: github
+#    url: github.com/repos/url
+
+projects:
+  -
+    title: Declarative Rollup Summaries for Lookups
+    location: github
+    url: https://github.com/afawcett/declarative-lookup-rollup-summaries/
+    description: |-
+      This is a long text that should be properly escaped,
+      even though it has many lines!
+  -
+    title: Mass Action Scheduler
+    location: github
+    url: https://github.com/douglascayers-org/sfdx-mass-action-scheduler
+  -
+    title: Dogeforce's Website (this site!)
+    location: github
+    url: https://github.com/Dogeforce/dogeforce.github.io/

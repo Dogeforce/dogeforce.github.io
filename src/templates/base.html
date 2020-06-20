@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    {% include 'header.html' %}
+
+<body>
+    <div class="slds-container slds-theme_default slds-border_top" style="height: 80vh;">
+
+        <div class="slds-grid">
+
+            <!-- sidebar -->
+            <div class="slds-border_right slds-col slds-size_1-of-6">
+                {{ page.repositories }}
+            </div>
+
+            <!-- content -->
+            <div class="slds-grid slds-p-left_small slds-col slds-size_1-of-6">
+                <p>Content goes here...</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+{% include 'footer.html' %}
+
+</html>

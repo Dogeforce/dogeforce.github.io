@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    {% include 'header.html' %}
+
+<body>
+    <div class="slds-container slds-theme_default slds-border_top" style="height: 80vh;">
+
+        <div class="slds-grid">
+
+            <!-- sidebar -->
+            <div class="slds-border_right slds-col slds-size_1-of-6">
+                {{ detail.repositories }}
+            </div>
+
+            <!-- content -->
+            <div class="slds-grid slds-p-left_small slds-col slds-size_5-of-6">
+
+                {% block content %}
+                    <div class="slds-m-around_small">
+                        <p class="slds-text-heading_large">{{ detail.title }}</p>
+
+                        <p class="slds-text-heading_medium">Website: <a href="{{ detail.url }}">{{ detail.url }}</a></p>
+
+                        <p>{{ detail.description }}</p>
+                    </div>
+
+                {% endblock %}
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+{% include 'footer.html' %}
+
+</html>
