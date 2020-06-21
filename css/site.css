@@ -2,9 +2,23 @@
     width: 100px;
 }
 
+.dgf-body {
+    min-height: 80vh;
+}
+
 .dgf-footer {
+    min-height: 10vh;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
+}
+
+div > pre {
+    white-space: pre-wrap;
+    word-wrap: anywhere;
+}
+
+.dgf-footer-space {
+    height: 10vh;
 }

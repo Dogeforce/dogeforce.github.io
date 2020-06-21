@@ -71,18 +71,21 @@
 
                 
 
-<ol class="slds-has-dividers_bottom slds-has-block-links_space" style="width: 100%;">
-    
-    <li class="slds-item">
-        <div class="slds-text-heading_large slds-m-bottom_small">
-            <a href="posts/2020-12-25-patch_method.html">Salesforce’s Apex does not support the PATCH method. What to do if I need to call an endpoint with PATCH?</a>
-        </div>
-        <div class="slds-text-color_weak slds-m-bottom_small slds-m-left_small">
-            <p>I needed to call a Microsoft Azure endpoint from Salesforce using the PATCH HTTP verb. The problem is, as mentioned in the title, that Apex does not support this verb.</p>
-        </div>
-    </li>
-    
-</ol>
+<div class="slds-m-around_small">
+    <p class="slds-text-heading_large slds-m-bottom_small">Declarative Rollup Summaries for Lookups</p>
+
+    <p class="slds-text-heading_medium">Website: <a href="https://github.com/afawcett/declarative-lookup-rollup-summaries/">https://github.com/afawcett/declarative-lookup-rollup-summaries/</a></p>
+
+    <div>
+        <h2 class="slds-text-heading_medium slds-m-bottom_medium slds-m-top_medium">About the tool</h2>
+<p class="slds-m-bottom_medium">The DLRS is a tool that offers a feature set that extends a feature called "rollup summaries" on the Salesforce platform. It deploys Apex code to your organization and enables administrators to deploy automatically generated code to the org (even a production environment, yes).</p>
+<p class="slds-m-bottom_medium">The tool code operates using custom metadata records managed by a Visualforce page on the project. From there an administrator or a developer can create custom metadata records for the tool to use when running its triggers (the code deployed which was mentioned before).</p>
+<p class="slds-m-bottom_medium">When a record with a DLRS trigger is saved, it activates the DLRS tool which then gets the custom setting for the specific object. Then it queries the object and its related record(s) to update its rollup summary.</p>
+<h3 class="slds-text-heading_small slds-m-bottom_medium slds-m-top_medium">Example</h3>
+<p class="slds-m-bottom_medium">A rollup is created on Custom Object A (<code>CustomObjectA__c</code>) to count how many Custom Object B's (<code>CustomObjectB__c</code>) records are related to it through a common lookup field (not a master-detail relationship, that is).</p>
+<p class="slds-m-bottom_medium">When a new object B is created, updated or deleted, the tool analyzes the criteria defined on its custom setting (the custom metadata type) and evaluates whether or not to update the counter on the parent (object A) field.</p>
+    </div>
+</div>
 
 
 

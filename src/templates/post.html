@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block sidebar %}
+    {{ sidebar }}
+{% endblock %}
+
+{% block content %}
+
+<div>
+    <div class="slds-m-top_medium">
+        <div class="slds-text-heading_large ">{{ metadata.title }}</div>
+        <div class="slds-text-heading_medium">by {{ metadata.author }}</div>
+        <div class="slds-m-top_small">when: {{ metadata.publish_date }}</div>
+    </div>
+    <div class="slds-m-top_large">
+        {{ content }}
+    </div>
+</div>
+
+{% endblock %}

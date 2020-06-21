@@ -1,0 +1,22 @@
+# Each project should have the following format:
+#
+# title: Project's Title
+#    location: github
+#    url: github.com/repos/url
+
+projects:
+  -
+    title: Declarative Rollup Summaries for Lookups
+    description: dlrs.md
+    location: github
+    url: https://github.com/afawcett/declarative-lookup-rollup-summaries/
+  -
+    title: Mass Action Scheduler
+    description: mas.md
+    location: github
+    url: https://github.com/douglascayers-org/sfdx-mass-action-scheduler
+  -
+    title: Dogeforce's Website (this site!)
+    description: dogeforce.md
+    location: github
+    url: https://github.com/Dogeforce/dogeforce.github.io/
