@@ -6,7 +6,6 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-markdown2 = "*"
 jinja2 = "*"
 pyyaml = "*"
 python-slugify = "*"

@@ -5,7 +5,17 @@
 
 {% block content %}
 
-<!-- todo: add posts -->
-<p>Recent posts go here!</p>
+<ol class="slds-has-dividers_bottom slds-has-block-links_space" style="width: 100%;">
+    {% for post in page.recent_posts %}
+    <li class="slds-item">
+        <div class="slds-text-heading_large slds-m-bottom_small">
+            <a href="{{post.url}}">{{ post.title }}</a>
+        </div>
+        <div class="slds-text-color_weak slds-m-bottom_small slds-m-left_small">
+            <p>{{ post.preview }}</p>
+        </div>
+    </li>
+    {% endfor %}
+</ol>
 
 {% endblock %}

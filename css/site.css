@@ -8,3 +8,12 @@
     bottom: 0;
     width: 100%;
 }
+
+div > pre {
+    white-space: pre-wrap;
+    word-wrap: anywhere;
+}
+
+.dgf-footer-space {
+    height: 10vh;
+}
